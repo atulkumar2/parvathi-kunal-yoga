@@ -1,0 +1,71 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    letter-spacing: -0.02em;
+}
+
+.navLinks {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.link {
+    font-weight: 500;
+    color: var(--text-dark);
+    font-size: 1rem;
+    position: relative;
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--secondary-color);
+    transition: width 0.3s ease;
+}
+
+.link:hover::after {
+    width: 100%;
+}
+
+.ctaButton {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-full);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+    background-color: #c08b5c;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+@media (max-width: 768px) {
+    .navLinks {
+        display: none;
+        /* Mobile menu to be implemented if needed, for now simple hide */
+    }
+}
