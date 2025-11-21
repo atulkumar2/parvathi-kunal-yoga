@@ -3,7 +3,7 @@ import Footer from '@/components/Footer';
 import styles from './payment.module.css';
 
 export const metadata = {
-    title: "Payment Details | Nirog Yoga",
+    title: "Payment Options | Nirog Yoga",
     description: "Payment information for enrollment in Nirog Yoga programs.",
 };
 
@@ -14,7 +14,7 @@ export default function Payment() {
 
             <div className={styles.container}>
                 <header className={styles.header}>
-                    <h1 className={styles.title}>Payment Details</h1>
+                    <h1 className={styles.title}>Payment Options</h1>
                     <p className={styles.subtitle}>
                         Please use the following details to complete your payment. You will need to enter your transaction ID in the enrollment form.
                     </p>

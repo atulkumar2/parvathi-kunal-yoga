@@ -21,6 +21,21 @@ export default function Enrollment() {
                     </p>
                 </header>
 
+                <div className={styles.ctaSection} style={{ marginTop: '2rem', marginBottom: '3rem' }}>
+                    <p className={styles.infoText} style={{ marginBottom: '1.5rem', fontSize: '1.1rem' }}>
+                        <Link href="/payment" className={styles.paymentLink}>Payment Options</Link> to complete your enrollment.
+                    </p>
+                    <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSfKyn1PpqrUPOABP_zKrWz4X2orMMrm03EO9s4gJq1QiYgLdg/viewform"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.button}
+                    >
+                        Enroll Now
+                    </a>
+                    <span className={styles.totalTime} style={{ display: 'block', marginTop: '1rem' }}>Total Expected Time: 10–15 minutes</span>
+                </div>
+
                 <div className={styles.timeline}>
                     {/* Step 1 */}
                     <div className={styles.step}>
@@ -102,23 +117,7 @@ export default function Enrollment() {
                     </div>
                 </div>
 
-                <div className={styles.infoBox}>
-                    <p className={styles.infoText}>
-                        Before starting the questionnaire, please review our <Link href="/payment" className={styles.paymentLink}>Payment Details</Link> to complete your enrollment.
-                    </p>
-                </div>
 
-                <div className={styles.ctaSection}>
-                    <span className={styles.totalTime}>Total Expected Time: 10–15 minutes</span>
-                    <a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSfKyn1PpqrUPOABP_zKrWz4X2orMMrm03EO9s4gJq1QiYgLdg/viewform"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={styles.button}
-                    >
-                        Start Questionnaire
-                    </a>
-                </div>
             </div>
 
             <Footer />

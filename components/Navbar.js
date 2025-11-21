@@ -18,7 +18,7 @@ const Navbar = () => {
                 <Link href="/#contact" className={styles.link}>Contact</Link>
                 <Link href="/payment" className={styles.link}>Payment</Link>
                 <Link href="/enrollment" className={styles.ctaButton}>
-                    Enrol Now
+                    Enrollment Details
                 </Link>
             </div>
         </nav>
