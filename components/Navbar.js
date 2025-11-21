@@ -13,14 +13,9 @@ const Navbar = () => {
                 <Link href="#therapy" className={styles.link}>Therapy</Link>
                 <Link href="#instructors" className={styles.link}>Instructors</Link>
                 <Link href="#contact" className={styles.link}>Contact</Link>
-                <a
-                    href="https://forms.gle/Lzgxtbm8QPu4ojiU7"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.ctaButton}
-                >
+                <Link href="/enrollment" className={styles.ctaButton}>
                     Enrol Now
-                </a>
+                </Link>
             </div>
         </nav>
     );

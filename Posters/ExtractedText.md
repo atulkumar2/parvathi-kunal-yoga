@@ -1,5 +1,3 @@
----
-
 # ✅ **Extracted Content for Copilot Prompt (Wellness Website)**
 
 ## **1. Program / Brand Name**

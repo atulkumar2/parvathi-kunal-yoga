@@ -11,13 +11,13 @@ const InstructorProfile = () => {
                         <div className={styles.imageWrapper}>
                             {/* Placeholder for Dr. Kunal's image */}
                             <img
-                                src="https://images.unsplash.com/photo-1544367563-12123d8965cd?q=80&w=2670&auto=format&fit=crop"
+                                src="/kunal_snapshot.jpg"
                                 alt="Prof. (Dr.) Kunal"
                                 className={styles.image}
                             />
                         </div>
                         <div className={styles.content}>
-                            <h3 className={styles.name}>Prof. (Dr.) Kunal</h3>
+                            <h3 className={styles.name}>Prof. (Dr.) Kunal Katyayan</h3>
                             <span className={styles.title}>MBBS, MD, PGDYS (PG Diploma in Yogic Sciences)</span>
                             <p className={styles.bio}>
                                 A Professor of Physiology with deep expertise in Yogic Sciences. Dr. Kunal bridges the gap between modern medicine and traditional yoga to offer holistic healing solutions.
