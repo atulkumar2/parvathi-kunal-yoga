@@ -14,8 +14,8 @@ const Footer = () => {
 
                 <div className={styles.column}>
                     <h3>Contact Us</h3>
-                    <span className={styles.text}>Phone: 8792873242 / 8123690515</span>
-                    <span className={styles.text}>Email: drkunal10@gmail.com</span>
+                    <span className={styles.text}>Phone: +91-8792873242 / +91-8123690515</span>
+                    <span className={styles.text}>Email: nirogyoga5@gmail.com</span>
 
                     <div className={styles.socials}>
                         {/* Instagram */}
@@ -77,7 +77,7 @@ const Footer = () => {
 
                 <div className={styles.column}>
                     <h3>Quick Links</h3>
-                    <a href="/payment" className={styles.link}>Payment Details</a>
+                    <a href="/payment" className={styles.link}>Payment Options</a>
                     <a href="/enrollment" className={styles.link}>Enrollment Form</a>
                 </div>
             </div>

@@ -1,0 +1,55 @@
+.banner {
+    background-color: var(--primary-color);
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px 0;
+    position: relative;
+    z-index: 1001;
+    /* Above navbar */
+}
+
+.content {
+    display: inline-block;
+    animation: scroll 30s linear infinite;
+}
+
+.text {
+    display: inline-block;
+    padding-right: 50px;
+    /* Space between repeated text */
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.link {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.link:hover {
+    color: var(--secondary-color);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+        /* Move by 50% if we have 2 sets, adjust based on content duplication */
+    }
+}
+
+/* Adjust animation for mobile to be slower or different if needed */
+@media (max-width: 768px) {
+    .text {
+        font-size: 0.9rem;
+    }
+
+    .content {
+        animation-duration: 20s;
+    }
+}

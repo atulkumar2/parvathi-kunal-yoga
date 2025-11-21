@@ -18,10 +18,13 @@ export const metadata = {
   description: "Holistic healing and yoga retreats in Mangalore by Prof. (Dr.) Kunal and Parvathi. Restore calmness, focus, and health.",
 };
 
+import AnnouncementBanner from "@/components/AnnouncementBanner";
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.variable} ${outfit.variable}`}>
+        <AnnouncementBanner />
         {children}
       </body>
     </html>

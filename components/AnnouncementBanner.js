@@ -1,0 +1,26 @@
+import Link from 'next/link';
+import styles from './AnnouncementBanner.module.css';
+
+const AnnouncementBanner = () => {
+    return (
+        <div className={styles.banner}>
+            <div className={styles.content}>
+                <span className={styles.text}>
+                    📣 Classes starting from <strong>December 1st</strong>. <Link href="/enrollment" className={styles.link}>Enroll now</Link> to secure your spot! 🧘‍♀️
+                </span>
+                {/* Duplicate for seamless scrolling */}
+                <span className={styles.text} aria-hidden="true">
+                    📣 Classes starting from <strong>December 1st</strong>. <Link href="/enrollment" className={styles.link}>Enroll now</Link> to secure your spot! 🧘‍♀️
+                </span>
+                <span className={styles.text} aria-hidden="true">
+                    📣 Classes starting from <strong>December 1st</strong>. <Link href="/enrollment" className={styles.link}>Enroll now</Link> to secure your spot! 🧘‍♀️
+                </span>
+                <span className={styles.text} aria-hidden="true">
+                    📣 Classes starting from <strong>December 1st</strong>. <Link href="/enrollment" className={styles.link}>Enroll now</Link> to secure your spot! 🧘‍♀️
+                </span>
+            </div>
+        </div>
+    );
+};
+
+export default AnnouncementBanner;

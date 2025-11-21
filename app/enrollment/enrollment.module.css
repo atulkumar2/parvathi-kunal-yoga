@@ -127,6 +127,8 @@
     background: var(--surface-light);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
+    position: relative;
+    /* Added for absolute positioning of children */
 }
 
 .totalTime {
@@ -155,6 +157,18 @@
     box-shadow: var(--shadow-lg);
 }
 
+/* New class for payment note positioning */
+.paymentNote {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+    text-align: right;
+    max-width: 300px;
+}
+
 @media (max-width: 768px) {
     .timeline {
         padding-left: 1rem;
@@ -172,5 +186,17 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 0.5rem;
+    }
+
+    /* Reset positioning for mobile */
+    .paymentNote {
+        position: static;
+        text-align: center;
+        margin-top: 1.5rem;
+        max-width: 100%;
+    }
+
+    .ctaSection {
+        padding-bottom: 2rem;
     }
 }
