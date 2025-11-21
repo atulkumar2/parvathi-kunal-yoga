@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import styles from './enrollment.module.css';
+import Link from 'next/link';
 
 export const metadata = {
     title: "Enrollment | Healing Yoga Sadhana",
@@ -99,6 +100,12 @@ export default function Enrollment() {
                             <li className={styles.listItem}>Transaction ID entry</li>
                         </ul>
                     </div>
+                </div>
+
+                <div className={styles.infoBox}>
+                    <p className={styles.infoText}>
+                        Before starting the questionnaire, please review our <Link href="/payment" className={styles.paymentLink}>Payment Details</Link> to complete your enrollment.
+                    </p>
                 </div>
 
                 <div className={styles.ctaSection}>

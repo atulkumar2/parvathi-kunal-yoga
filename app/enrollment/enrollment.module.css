@@ -94,6 +94,32 @@
     margin-bottom: 0.25rem;
 }
 
+.infoBox {
+    margin: var(--spacing-lg) 0;
+    padding: 1.5rem;
+    background: #fff5eb;
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--secondary-color);
+    text-align: center;
+}
+
+.infoText {
+    color: var(--text-dark);
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.paymentLink {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.paymentLink:hover {
+    color: var(--primary-light);
+}
+
 .ctaSection {
     text-align: center;
     margin-top: var(--spacing-lg);
