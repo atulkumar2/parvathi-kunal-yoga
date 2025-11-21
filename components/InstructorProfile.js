@@ -7,42 +7,46 @@ const InstructorProfile = () => {
                 <h2 className={styles.heading}>Our Instructors</h2>
                 <div className={styles.grid}>
                     {/* Dr. Kunal */}
-                    <div className={styles.card}>
-                        <div className={styles.imageWrapper}>
-                            {/* Placeholder for Dr. Kunal's image */}
-                            <img
-                                src="/kunal_snapshot.jpg"
-                                alt="Prof. (Dr.) Kunal"
-                                className={styles.image}
-                            />
+                    <a href="/instructors/dr-kunal" className={styles.cardLink}>
+                        <div className={styles.card}>
+                            <div className={styles.imageWrapper}>
+                                <img
+                                    src="/dr-kunal.jpg"
+                                    alt="Prof. (Dr.) Kunal"
+                                    className={styles.image}
+                                />
+                            </div>
+                            <div className={styles.content}>
+                                <h3 className={styles.name}>Prof. (Dr.) Kunal Katyayan</h3>
+                                <span className={styles.title}>MBBS, MD, PGDYS (PG Diploma in Yogic Sciences)</span>
+                                <p className={styles.bio}>
+                                    A Professor of Physiology with deep expertise in Yogic Sciences. Dr. Kunal bridges the gap between modern medicine and traditional yoga to offer holistic healing solutions.
+                                </p>
+                                <span className={styles.readMore}>View Profile →</span>
+                            </div>
                         </div>
-                        <div className={styles.content}>
-                            <h3 className={styles.name}>Prof. (Dr.) Kunal Katyayan</h3>
-                            <span className={styles.title}>MBBS, MD, PGDYS (PG Diploma in Yogic Sciences)</span>
-                            <p className={styles.bio}>
-                                A Professor of Physiology with deep expertise in Yogic Sciences. Dr. Kunal bridges the gap between modern medicine and traditional yoga to offer holistic healing solutions.
-                            </p>
-                        </div>
-                    </div>
+                    </a>
 
                     {/* Parvathi Katyayan */}
-                    <div className={styles.card}>
-                        <div className={styles.imageWrapper}>
-                            {/* Placeholder for Parvathi's image */}
-                            <img
-                                src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?q=80&w=2670&auto=format&fit=crop"
-                                alt="Parvathi Katyayan"
-                                className={styles.image}
-                            />
+                    <a href="/instructors/parvathi" className={styles.cardLink}>
+                        <div className={styles.card}>
+                            <div className={styles.imageWrapper}>
+                                <img
+                                    src="/parvathi.jpg"
+                                    alt="Parvathi Katyayan"
+                                    className={styles.image}
+                                />
+                            </div>
+                            <div className={styles.content}>
+                                <h3 className={styles.name}>Parvathi Katyayan</h3>
+                                <span className={styles.title}>Yoga Instructor & Therapist</span>
+                                <p className={styles.bio}>
+                                    Dedicated to guiding individuals on their path to wellness through personalized yoga practices and mindfulness techniques.
+                                </p>
+                                <span className={styles.readMore}>View Profile →</span>
+                            </div>
                         </div>
-                        <div className={styles.content}>
-                            <h3 className={styles.name}>Parvathi Katyayan</h3>
-                            <span className={styles.title}>Yoga Instructor & Therapist</span>
-                            <p className={styles.bio}>
-                                Dedicated to guiding individuals on their path to wellness through personalized yoga practices and mindfulness techniques.
-                            </p>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
