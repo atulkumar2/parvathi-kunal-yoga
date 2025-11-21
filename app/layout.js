@@ -14,7 +14,7 @@ const outfit = Outfit({
 });
 
 export const metadata = {
-  title: "Healing Yoga Sadhana | Parvathi Kunal Yoga",
+  title: "Nirog Yoga | Healing, Yoga, Sadhana",
   description: "Holistic healing and yoga retreats in Mangalore by Prof. (Dr.) Kunal and Parvathi. Restore calmness, focus, and health.",
 };
 

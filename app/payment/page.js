@@ -3,8 +3,8 @@ import Footer from '@/components/Footer';
 import styles from './payment.module.css';
 
 export const metadata = {
-    title: "Payment Details | Healing Yoga Sadhana",
-    description: "Payment information for enrollment in Healing Yoga Sadhana programs.",
+    title: "Payment Details | Nirog Yoga",
+    description: "Payment information for enrollment in Nirog Yoga programs.",
 };
 
 export default function Payment() {

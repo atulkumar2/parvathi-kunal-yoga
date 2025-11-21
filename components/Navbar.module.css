@@ -14,10 +14,28 @@
 
 .logo {
     font-family: var(--font-heading);
+    text-decoration: none;
+}
+
+.brandContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.brandName {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--primary-color);
     letter-spacing: -0.02em;
+}
+
+.tagline {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--secondary-color);
+    font-style: italic;
+    letter-spacing: 0.05em;
 }
 
 .navLinks {

@@ -3,7 +3,7 @@ import Footer from '@/components/Footer';
 import styles from './ptsd.module.css';
 
 export const metadata = {
-    title: "PTSD Information | Healing Yoga Sadhana",
+    title: "PTSD Information | Nirog Yoga",
     description: "Understanding Post-Traumatic Stress Disorder in the Indian context - causes, symptoms, and healing approaches.",
 };
 

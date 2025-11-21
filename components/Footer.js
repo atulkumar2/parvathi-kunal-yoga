@@ -5,7 +5,8 @@ const Footer = () => {
         <footer id="contact" className={styles.footer}>
             <div className={styles.container}>
                 <div className={styles.column}>
-                    <h3>Healing Yoga Sadhana</h3>
+                    <h3>Nirog Yoga</h3>
+                    <p className={styles.tagline}>Healing, Yoga, Sadhana</p>
                     <p className={styles.text}>
                         A pathway back to calmness, focus, and health.
                     </p>

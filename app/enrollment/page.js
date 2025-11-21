@@ -4,7 +4,7 @@ import styles from './enrollment.module.css';
 import Link from 'next/link';
 
 export const metadata = {
-    title: "Enrollment | Healing Yoga Sadhana",
+    title: "Enrollment | Nirog Yoga",
     description: "Begin your healing journey. Understand what to expect in our enrollment questionnaire.",
 };
 
