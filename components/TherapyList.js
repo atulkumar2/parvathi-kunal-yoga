@@ -1,7 +1,7 @@
 import styles from './TherapyList.module.css';
 
 const conditions = [
-    { name: "Post-Traumatic Stress Disorder (PTSD)", link: "https://en.wikipedia.org/wiki/Post-traumatic_stress_disorder" },
+    { name: "Post-Traumatic Stress Disorder (PTSD)", link: "/ptsd" },
     { name: "Chronic Stress, Anxiety & Depression", link: "https://en.wikipedia.org/wiki/Anxiety_disorder" },
     { name: "ADHD in children", link: "https://en.wikipedia.org/wiki/Attention_deficit_hyperactivity_disorder" },
     { name: "Chronic Low Back Pain", link: "https://en.wikipedia.org/wiki/Low_back_pain" },
