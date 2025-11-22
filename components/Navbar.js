@@ -1,6 +1,7 @@
 "use client";
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from './Navbar.module.css';
 
 const Navbar = () => {
@@ -17,9 +18,15 @@ const Navbar = () => {
     return (
         <nav className={styles.navbar}>
             <Link href="/" className={styles.logo} onClick={closeMenu}>
-                <div className={styles.brandContainer}>
-                    <span className={styles.brandName}>Nirog Yoga</span>
-                    <span className={styles.tagline}>Healing, Yoga, Sadhana</span>
+                <div className={styles.logoContainer}>
+                    <Image
+                        src="/NirogYogaLogNavBarSolid.png"
+                        alt="Nirog Yoga"
+                        width={180}
+                        height={60}
+                        className={styles.logoImage}
+                        priority
+                    />
                 </div>
             </Link>
 
@@ -30,11 +37,12 @@ const Navbar = () => {
             </button>
 
             <div className={`${styles.navLinks} ${isMenuOpen ? styles.active : ''}`}>
+                <Link href="/about" className={styles.link} onClick={closeMenu}>About</Link>
+                <Link href="/instructors" className={styles.link} onClick={closeMenu}>Instructors</Link>
                 <Link href="/therapies" className={styles.link} onClick={closeMenu}>Therapy</Link>
+                <Link href="/programs" className={styles.link} onClick={closeMenu}>Programs</Link>
                 <Link href="/yoga-university" className={styles.link} onClick={closeMenu}>Yoga University</Link>
                 <Link href="/events" className={styles.link} onClick={closeMenu}>Events</Link>
-                <Link href="/programs" className={styles.link} onClick={closeMenu}>Programs</Link>
-                <Link href="/instructors" className={styles.link} onClick={closeMenu}>Instructors</Link>
                 <Link href="/#contact" className={styles.link} onClick={closeMenu}>Contact</Link>
                 <Link href="/payment" className={styles.link} onClick={closeMenu}>Payment</Link>
                 <Link href="/enrollment" className={styles.ctaButton} onClick={closeMenu}>
