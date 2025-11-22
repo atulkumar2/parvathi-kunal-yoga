@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import TherapyList from '@/components/TherapyList';
 import InstructorProfile from '@/components/InstructorProfile';
+import ProgramsSection from '@/components/ProgramsSection';
 import Footer from '@/components/Footer';
 import Chatbot from '@/components/Chatbot';
 
@@ -22,6 +23,7 @@ export default function Home() {
 
       <TherapyList />
       <InstructorProfile />
+      <ProgramsSection />
       <Footer />
       <Chatbot />
     </main>
