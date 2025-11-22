@@ -14,8 +14,25 @@ const outfit = Outfit({
 });
 
 export const metadata = {
+  metadataBase: new URL('https://nirogyoga.in'),
   title: "Nirog Yoga | Healing, Yoga, Sadhana",
-  description: "Holistic healing and yoga retreats in Mangalore by Prof. (Dr.) Kunal and Parvathi. Restore calmness, focus, and health.",
+  description: "Holistic healing and yoga retreats in Mangalore by Prof. (Dr.) Kunal Katyayan and Parvathi Katyayan. Restore calmness, focus, and health.",
+  openGraph: {
+    title: "Nirog Yoga | Healing, Yoga, Sadhana",
+    description: "Holistic healing and yoga retreats in Mangalore by Prof. (Dr.) Kunal Katyayan and Parvathi Katyayan. Restore calmness, focus, and health.",
+    url: 'https://nirogyoga.in',
+    siteName: 'Nirog Yoga',
+    images: [
+      {
+        url: '/NirogYogaPreview.png',
+        width: 1200,
+        height: 630,
+        alt: 'Nirog Yoga',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
 };
 
 import AnnouncementBanner from "@/components/AnnouncementBanner";
