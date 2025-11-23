@@ -31,7 +31,9 @@ export default function YogaUniversity() {
                         <ul className={styles.linkList}>
                             <li><Link href="/what-is-yoga/why-yoga" className={styles.link}>Why Yoga?</Link></li>
                             <li><Link href="/what-is-yoga/introduction" className={styles.link}>Introduction to Yoga</Link></li>
+                            <li><Link href="/what-is-yoga/safety-guidelines" className={styles.link}>Safety Guidelines for Practice</Link></li>
                             <li><Link href="/what-is-yoga/pranayama" className={styles.link}>Pranayama (Breath Regulation)</Link></li>
+                            <li><Link href="/what-is-yoga/meditation" className={styles.link}>Meditation (Dhyāna)</Link></li>
                             <li><Link href="/what-is-yoga/breathing-techniques" className={styles.link}>Breathing Control Techniques</Link></li>
                             <li><Link href="/what-is-yoga/historical-references" className={styles.link}>Historical References in Shastras</Link></li>
                         </ul>
@@ -45,6 +47,7 @@ export default function YogaUniversity() {
                         </p>
                         <ul className={styles.linkList}>
                             <li><Link href="/what-is-yoga/surya-namaskara" className={styles.link}>Surya Namaskara (Sun Salutation)</Link></li>
+                            <li><Link href="/what-is-yoga/major-asanas" className={styles.link}>Major Āsanas (Yoga Postures)</Link></li>
                         </ul>
                     </section>
                 </div>
