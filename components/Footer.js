@@ -82,7 +82,7 @@ const Footer = () => {
                     <Link href="/instructors" className={styles.link}>Instructors</Link>
                     <Link href="/therapies" className={styles.link}>Therapy</Link>
                     <Link href="/programs" className={styles.link}>Programs</Link>
-                    <Link href="/yoga-university" className={styles.link}>Yoga University</Link>
+                    <Link href="/what-is-yoga" className={styles.link}>What is Yoga?</Link>
                     <Link href="/events" className={styles.link}>Events</Link>
                     <Link href="/#contact" className={styles.link}>Contact</Link>
                     <Link href="/payment" className={styles.link}>Payment</Link>

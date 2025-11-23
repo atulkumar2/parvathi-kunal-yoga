@@ -3,7 +3,7 @@ import Footer from '@/components/Footer';
 import styles from './why-yoga.module.css';
 
 export const metadata = {
-    title: "Why Yoga? | Nirog Yoga University",
+    title: "Why Yoga? | What is Yoga?",
     description: "Discover why Yoga is the foundation of holistic human development and a preventive health approach for modern life.",
 };
 
@@ -20,7 +20,7 @@ export default function WhyYoga() {
 
                 <section className={styles.section}>
                     <p className={styles.text}>
-                        Yoga is more than a practice — it is a complete science of human well-being. At Nirog Yoga University, we view yoga as a structured discipline that cultivates physical health, mental clarity, emotional balance, and spiritual growth. It forms the core of our academic programs because it integrates ancient wisdom with modern scientific understanding.
+                        Yoga is more than a practice — it is a complete science of human well-being. At Nirog Yoga, we view yoga as a structured discipline that cultivates physical health, mental clarity, emotional balance, and spiritual growth. It forms the core of our academic programs because it integrates ancient wisdom with modern scientific understanding.
                     </p>
                 </section>
 
@@ -105,7 +105,7 @@ export default function WhyYoga() {
                 <section className={styles.section}>
                     <h2 className={styles.sectionTitle}>6. Integrating Tradition with Academic Excellence</h2>
                     <p className={styles.text}>
-                        Nirog Yoga University blends classical yogic sciences (Asana, Pranayama, Ayurveda, Philosophy, Meditation) with:
+                        Nirog Yoga blends classical yogic sciences (Asana, Pranayama, Ayurveda, Philosophy, Meditation) with:
                     </p>
                     <ul className={styles.list}>
                         <li>Evidence-based research</li>
