@@ -5,6 +5,7 @@ import InstructorProfile from '@/components/InstructorProfile';
 import ProgramsSection from '@/components/ProgramsSection';
 import Footer from '@/components/Footer';
 import Chatbot from '@/components/Chatbot';
+import styles from './page.module.css';
 
 export default function Home() {
   return (
@@ -12,9 +13,9 @@ export default function Home() {
       <Navbar />
       <Hero />
 
-      <section id="philosophy" className="container section-padding text-center">
-        <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', color: 'var(--primary-color)' }}>Our Philosophy</h2>
-        <p style={{ maxWidth: '800px', margin: '0 auto', fontSize: '1.1rem', color: '#555' }}>
+      <section id="philosophy" className={styles.philosophySection}>
+        <h2 className={styles.title}>Our Philosophy</h2>
+        <p className={styles.text}>
           Yoga offers holistic healing by enhancing immunity, reducing stress, and nurturing mental, emotional, and spiritual growth.
           Because it is adaptable for every age and ability, Yoga becomes a universally accessible tool for total well-being and lifelong health.
           We blend traditional yogic science with modern medical understanding to provide a safe and effective path to wellness.

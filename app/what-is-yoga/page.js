@@ -28,9 +28,9 @@ export default function YogaUniversity() {
                         <ul className={styles.linkList}>
                             <li><Link href="/what-is-yoga/why-yoga" className={styles.link}>Why Yoga?</Link></li>
                             <li><Link href="/what-is-yoga/introduction" className={styles.link}>Introduction to Yoga</Link></li>
-                            <li><Link href="#" className={styles.link}>Pranayama (Breath Regulation)</Link></li>
-                            <li><Link href="#" className={styles.link}>Breathing Control Techniques</Link></li>
-                            <li><Link href="#" className={styles.link}>Historical References in Shastras</Link></li>
+                            <li><Link href="/what-is-yoga/pranayama" className={styles.link}>Pranayama (Breath Regulation)</Link></li>
+                            <li><Link href="/what-is-yoga/breathing-techniques" className={styles.link}>Breathing Control Techniques</Link></li>
+                            <li><Link href="/what-is-yoga/historical-references" className={styles.link}>Historical References in Shastras</Link></li>
                         </ul>
                     </section>
 
