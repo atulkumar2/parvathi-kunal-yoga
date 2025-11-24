@@ -21,7 +21,7 @@ export default function Enrollment() {
                     </p>
                 </header>
 
-                <div className={styles.ctaSection} style={{ marginTop: '2rem', marginBottom: '3rem' }}>
+                <div className={styles.ctaSection}>
                     <a
                         href="https://docs.google.com/forms/d/e/1FAIpQLSfKyn1PpqrUPOABP_zKrWz4X2orMMrm03EO9s4gJq1QiYgLdg/viewform"
                         target="_blank"
@@ -30,10 +30,15 @@ export default function Enrollment() {
                     >
                         Enroll Now
                     </a>
-                    <span className={styles.totalTime} style={{ display: 'block', marginTop: '1rem' }}>Total Expected Time: 10–15 minutes</span>
-
-                    <p className={styles.paymentNote}>
-                        <Link href="/payment" className={styles.paymentLink}>Payment Options</Link> to complete your enrollment.
+                    <div className={styles.ctaInfo}>
+                        <span className={styles.totalTime}>Total Expected Time: 10–15 minutes</span>
+                        <span className={styles.separator}>|</span>
+                        <span className={styles.paymentNote}>
+                            <Link href="/payment" className={styles.paymentLink}>Payment Options</Link> to complete your enrollment.
+                        </span>
+                    </div>
+                    <p className={styles.contactNote}>
+                        Have doubts? <Link href="/contact" className={styles.contactLink}>Contact us</Link>
                     </p>
                 </div>
 

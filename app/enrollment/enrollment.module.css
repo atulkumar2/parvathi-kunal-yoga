@@ -122,51 +122,69 @@
 
 .ctaSection {
     text-align: center;
-    margin-top: var(--spacing-lg);
-    padding: 3rem;
+    margin-top: var(--spacing-md);
+    padding: 2rem;
     background: var(--surface-light);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
-    position: relative;
-    /* Added for absolute positioning of children */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.ctaInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    font-size: 0.95rem;
+    color: #666;
 }
 
 .totalTime {
-    font-size: 1.2rem;
-    color: var(--primary-color);
     font-weight: 600;
-    margin-bottom: 1.5rem;
-    display: block;
+    color: var(--primary-color);
+}
+
+.separator {
+    color: #ccc;
+}
+
+.paymentNote {
+    margin: 0;
+}
+
+.contactNote {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.contactLink {
+    color: var(--primary-color);
+    text-decoration: underline;
+    font-weight: 600;
 }
 
 .button {
     display: inline-block;
     background-color: var(--primary-color);
     color: white;
-    padding: 1rem 3rem;
-    font-size: 1.2rem;
+    padding: 0.8rem 2.5rem;
+    font-size: 1.1rem;
     font-weight: 600;
     border-radius: var(--radius-full);
     transition: all 0.3s ease;
     box-shadow: var(--shadow-md);
+    text-decoration: none;
 }
 
 .button:hover {
     background-color: var(--primary-light);
-    transform: translateY(-3px);
+    transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
-}
-
-/* New class for payment note positioning */
-.paymentNote {
-    position: absolute;
-    bottom: 15px;
-    right: 20px;
-    font-size: 0.9rem;
-    color: #666;
-    margin: 0;
-    text-align: right;
-    max-width: 300px;
 }
 
 @media (max-width: 768px) {
@@ -188,15 +206,16 @@
         gap: 0.5rem;
     }
 
-    /* Reset positioning for mobile */
-    .paymentNote {
-        position: static;
-        text-align: center;
-        margin-top: 1.5rem;
-        max-width: 100%;
+    .ctaSection {
+        padding: 1.5rem;
     }
 
-    .ctaSection {
-        padding-bottom: 2rem;
+    .ctaInfo {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .separator {
+        display: none;
     }
 }

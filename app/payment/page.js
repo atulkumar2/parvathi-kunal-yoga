@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import styles from './payment.module.css';
@@ -48,6 +49,9 @@ export default function Payment() {
                     </div>
 
                     <div className={styles.qrCodeContainer}>
+                        <div className={styles.warningBanner}>
+                            Have doubts? <Link href="/contact" className={styles.warningLink}>Contact us</Link> before payment.
+                        </div>
                         <img
                             src="/payment-qr-code.jpg"
                             alt="Payment QR Code"
