@@ -46,6 +46,7 @@ export default function YogaUniversity() {
                             Learn classical yoga postures and dynamic sequences for complete practice.
                         </p>
                         <ul className={styles.linkList}>
+                            <li><Link href="/what-is-yoga/standing-asanas" className={styles.link}>Standing Asanas</Link></li>
                             <li><Link href="/what-is-yoga/surya-namaskara" className={styles.link}>Surya Namaskara (Sun Salutation)</Link></li>
                             <li><Link href="/what-is-yoga/major-asanas" className={styles.link}>Major Āsanas (Yoga Postures)</Link></li>
                         </ul>
