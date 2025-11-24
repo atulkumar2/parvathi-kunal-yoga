@@ -1,0 +1,30 @@
+# Test files - not needed in production
+tests/
+*.test.js
+*.spec.js
+
+# Development files
+.env.local
+.env.development
+
+# Documentation
+README.md
+*.md
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Dependencies (Vercel installs these)
+node_modules/
+
+# Example files
+*.example
