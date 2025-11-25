@@ -67,6 +67,20 @@ export default function Payment() {
                         You will need to enter it in the enrollment questionnaire.
                     </p>
                 </div>
+
+                <div className={styles.ctaSection}>
+                    <p className={styles.ctaText}>
+                        Ready to complete your enrollment? Fill out the enrollment form or register your interest to get started.
+                    </p>
+                    <div className={styles.buttonGroup}>
+                        <Link href="/enrollment-payment" className={styles.ctaButton}>
+                            Enroll Now
+                        </Link>
+                        <Link href="/testimonials#interest" className={styles.secondaryButton}>
+                            Register Interest
+                        </Link>
+                    </div>
+                </div>
             </div>
 
             <Footer />

@@ -84,23 +84,12 @@
     margin-bottom: 1.5rem;
 }
 
-.formPlaceholder {
-    background: #f8f9fa;
-    padding: 2rem;
+.formIframe {
+    border: none;
     border-radius: var(--radius-md);
-    border: 2px dashed #ddd;
-    text-align: center;
-}
-
-.formPlaceholder p {
-    margin: 0.5rem 0;
-}
-
-.formPlaceholder code {
-    background: #e9ecef;
-    padding: 0.25rem 0.5rem;
-    border-radius: var(--radius-sm);
-    font-size: 0.85rem;
+    width: 100%;
+    min-height: 600px;
+    background: #f8f9fa;
 }
 
 .integrationInstructions {
