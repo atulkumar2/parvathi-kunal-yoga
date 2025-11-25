@@ -4,7 +4,7 @@ import styles from './meditation.module.css';
 
 export const metadata = {
     title: "Meditation (Dhyāna) | Nirog Yoga",
-    description: "Cultivating steady awareness and inner clarity through structured meditation practice - exploring historical foundations, scientific evidence, and practical training methods.",
+    description: "Cultivating steady awareness and inner clarity through structured meditation practice - exploring foundations, scientific evidence, and practical training methods.",
 };
 
 export default function Meditation() {

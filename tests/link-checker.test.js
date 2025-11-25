@@ -19,7 +19,13 @@ const PAGES_TO_TEST = [
     '/testimonials',
     '/what-is-yoga',
     '/what-is-yoga/standing-asanas',
+    '/what-is-yoga/pranayama',
+    '/what-is-yoga/meditation',
+    '/what-is-yoga/safety-guidelines',
     '/yoga-healing',
+    '/yoga-healing/ptsd',
+    '/yoga-healing/anxiety-depression',
+    '/yoga-healing/diabetes',
     '/resources',
 ];
 

@@ -11,9 +11,15 @@ const PAGES_TO_TEST = [
     '/instructors',
     '/programs-events',
     '/enrollment-payment',
+    '/payment',
     '/contact',
+    '/testimonials',
     '/what-is-yoga',
+    '/what-is-yoga/pranayama',
+    '/what-is-yoga/meditation',
     '/yoga-healing',
+    '/yoga-healing/ptsd',
+    '/yoga-healing/anxiety-depression',
 ];
 
 describe('Mobile Responsiveness Tests', () => {
