@@ -29,6 +29,28 @@ export default function Testimonials() {
                     </p>
 
                     <div className={styles.formsGrid}>
+                        {/* Interest Form - Moved to Top for Emphasis */}
+                        <div className={styles.formCard}>
+                            <div className={styles.formCardHeader}>
+                                <span className={styles.formIcon}>🌟</span>
+                                <h3 className={styles.formCardTitle}>Interest</h3>
+                            </div>
+                            <p className={styles.formCardDescription}>
+                                Interested in our programs? Let us know what you're looking for and we'll get in touch.
+                            </p>
+                            <iframe
+                                src="https://forms.gle/4two5f7HTLp2xmkj9"
+                                width="100%"
+                                height="600"
+                                frameBorder="0"
+                                marginHeight="0"
+                                marginWidth="0"
+                                className={styles.formIframe}
+                            >
+                                Loading…
+                            </iframe>
+                        </div>
+
                         {/* Review Form */}
                         <div className={styles.formCard}>
                             <div className={styles.formCardHeader}>
@@ -62,28 +84,6 @@ export default function Testimonials() {
                             </p>
                             <iframe
                                 src="https://forms.gle/MvdxQm6mUesQFRXS9"
-                                width="100%"
-                                height="600"
-                                frameBorder="0"
-                                marginHeight="0"
-                                marginWidth="0"
-                                className={styles.formIframe}
-                            >
-                                Loading…
-                            </iframe>
-                        </div>
-
-                        {/* Interest Form */}
-                        <div className={styles.formCard}>
-                            <div className={styles.formCardHeader}>
-                                <span className={styles.formIcon}>🌟</span>
-                                <h3 className={styles.formCardTitle}>Interest</h3>
-                            </div>
-                            <p className={styles.formCardDescription}>
-                                Interested in our programs? Let us know what you're looking for and we'll get in touch.
-                            </p>
-                            <iframe
-                                src="https://forms.gle/4two5f7HTLp2xmkj9"
                                 width="100%"
                                 height="600"
                                 frameBorder="0"
