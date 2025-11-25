@@ -77,6 +77,17 @@ export default function Contact() {
                     </div>
                 </div>
 
+                {/* Call to Action - Interest Form */}
+                <div className={styles.ctaSection}>
+                    <h2 className={styles.ctaTitle}>Interested in Our Programs?</h2>
+                    <p className={styles.ctaText}>
+                        Register your interest and we'll get in touch with you to discuss how we can help you on your wellness journey.
+                    </p>
+                    <a href="/testimonials#interest" className={styles.ctaButton}>
+                        Register Interest
+                    </a>
+                </div>
+
                 {/* Map */}
                 <div className={styles.mapContainer}>
                     <iframe

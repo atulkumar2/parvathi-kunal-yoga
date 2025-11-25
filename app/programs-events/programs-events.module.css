@@ -27,6 +27,149 @@
     color: #ccc;
 }
 
+/* Permanent Banner - Flashy Star/Badge Design */
+.permanentBanner {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 25%, #fbbf24 50%, #f59e0b 75%, #d97706 100%);
+    background-size: 200% 200%;
+    animation: gradientShift 8s ease infinite;
+    padding: 4rem 1.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+}
+
+/* Animated gradient background */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Radial rays effect */
+.permanentBanner::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150%;
+    height: 150%;
+    background:
+        repeating-conic-gradient(from 0deg,
+            rgba(255, 255, 255, 0.3) 0deg 10deg,
+            transparent 10deg 20deg);
+    animation: rotate 20s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes rotate {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* Pulsing glow effect */
+.permanentBanner::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, transparent 70%);
+    animation: pulse 3s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 0.6;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+}
+
+.bannerMessage {
+    font-size: 2.5rem;
+    color: #7c2d12;
+    margin: 0;
+    line-height: 1.3;
+    font-weight: 800;
+    position: relative;
+    z-index: 1;
+    text-shadow:
+        2px 2px 4px rgba(255, 255, 255, 0.8),
+        0 0 20px rgba(251, 191, 36, 0.6),
+        0 0 40px rgba(251, 191, 36, 0.4);
+    letter-spacing: 1px;
+    font-family: 'Playfair Display', serif;
+    animation: textGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes textGlow {
+    from {
+        text-shadow:
+            2px 2px 4px rgba(255, 255, 255, 0.8),
+            0 0 20px rgba(251, 191, 36, 0.6),
+            0 0 40px rgba(251, 191, 36, 0.4);
+    }
+
+    to {
+        text-shadow:
+            2px 2px 4px rgba(255, 255, 255, 0.9),
+            0 0 30px rgba(251, 191, 36, 0.8),
+            0 0 50px rgba(251, 191, 36, 0.6);
+    }
+}
+
+.bannerHighlight {
+    display: block;
+    color: #78350f;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
+}
+
+.bannerLink {
+    color: #78350f;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+    transition: all 0.3s ease;
+    font-weight: 700;
+}
+
+.bannerLink:hover {
+    color: #451a03;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    text-decoration-thickness: 3px;
+}
+
 /* Programs Section */
 .container {
     max-width: 1200px;
@@ -220,48 +363,6 @@
     transform: translateY(-2px);
 }
 
-/* Permanent Banner */
-.permanentBanner {
-    background: linear-gradient(to right, #fffbeb, #fff);
-    padding: 2.5rem 1.5rem;
-    text-align: center;
-    border-bottom: 2px solid #fbd38d;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    position: relative;
-    top: 0;
-    z-index: 10;
-}
-
-.bannerMessage {
-    font-size: 1.8rem;
-    color: #744210;
-    margin: 0;
-    line-height: 1.4;
-    font-weight: 700;
-}
-
-.bannerHighlight {
-    display: block;
-    color: #d69e2e;
-    margin-top: 0.8rem;
-    font-size: 1.4rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.bannerLink {
-    color: inherit;
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 4px;
-    transition: color 0.2s ease;
-}
-
-.bannerLink:hover {
-    color: #b7791f;
-}
-
 /* Events Section */
 .eventsContainer {
     max-width: 1000px;
@@ -414,7 +515,7 @@
     }
 
     .bannerMessage {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
     }
 
     .bannerHighlight {

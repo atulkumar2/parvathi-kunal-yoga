@@ -50,7 +50,7 @@ export default function Payment() {
 
                     <div className={styles.qrCodeContainer}>
                         <div className={styles.warningBanner}>
-                            Have doubts? <Link href="/contact" className={styles.warningLink}>Contact us</Link> before payment.
+                            <Link href="/programs" className={styles.warningLink}>View Programs</Link> | Have doubts? <Link href="/contact" className={styles.warningLink}>Contact us</Link> before payment.
                         </div>
                         <img
                             src="/payment-qr-code.jpg"
@@ -73,6 +73,9 @@ export default function Payment() {
                         Ready to complete your enrollment? Fill out the enrollment form or register your interest to get started.
                     </p>
                     <div className={styles.buttonGroup}>
+                        <Link href="/programs" className={styles.ctaButton}>
+                            View Programs
+                        </Link>
                         <Link href="/enrollment-payment" className={styles.ctaButton}>
                             Enroll Now
                         </Link>
