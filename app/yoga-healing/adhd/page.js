@@ -57,15 +57,15 @@ export default function ADHD() {
                 </section>
 
                 {/* Extended Research Report */}
-                <section id="scientific-findings" className={styles.reportSection}>
-                    <h2 className={styles.reportTitle}>Scientific Findings: Impact of Yoga on ADHD in Children</h2>
+                <section id="scientific-findings" className={styles.section}>
+                    <h2 className={styles.sectionTitle}>Scientific Findings: Impact of Yoga on ADHD in Children</h2>
 
-                    <h3 id="summary" className={styles.reportSubtitle}>Summary</h3>
+                    <h3 id="summary" className={styles.subheading}>Summary</h3>
                     <p className={styles.text}>
                         PubMed-indexed studies (randomized trials, controlled trials, pilot studies, and systematic reviews) report that yoga and related mind-body programs can improve attention, reduce hyperactivity/impulsivity, and enhance aspects of executive function and emotional regulation in children with ADHD or elevated ADHD symptoms. Effects are generally small-to-moderate, more consistent versus passive controls, and appear strongest when yoga is structured, taught regularly, and combined with breath-work and mindfulness components. However, the literature is heterogeneous (wide variety in yoga styles, ages, outcome measures), sample sizes are often small, long-term follow-up is limited, and more high-quality RCTs are needed.
                     </p>
 
-                    <h3 id="overview" className={styles.reportSubtitle}>1. Overview of PubMed Literature</h3>
+                    <h3 id="overview" className={styles.subheading}>1. Overview of PubMed Literature</h3>
                     <p className={styles.text}>
                         The evidence base has grown significantly over the last decade. Systematic reviews (e.g., 2019, 2022, 2023) generally conclude that yoga is a "promising" complementary therapy for ADHD. While individual studies vary in quality and design, the trend consistently points towards positive behavioral and cognitive outcomes. Research includes:
                     </p>
@@ -76,7 +76,7 @@ export default function ADHD() {
                         <li><strong>Systematic Reviews & Meta-analyses:</strong> Comprehensive reviews synthesize findings across multiple studies, confirming small-to-moderate positive effects.</li>
                     </ul>
 
-                    <h3 id="attention" className={styles.reportSubtitle}>2. Effects on Attention & Inattention</h3>
+                    <h3 id="attention" className={styles.subheading}>2. Effects on Attention & Inattention</h3>
                     <ul className={styles.list}>
                         <li><strong>Sustained Attention:</strong> Studies using objective measures (like continuous performance tests, visual attention tasks) often show improved reaction times, reduced omission errors, and better accuracy after yoga interventions lasting 6-12 weeks.</li>
                         <li><strong>Teacher/Parent Ratings:</strong> Significant reductions in inattention scores on standardized scales (like Conners' Rating Scales, ADHD Rating Scale-IV) are frequently reported by teachers and parents.</li>
@@ -84,7 +84,7 @@ export default function ADHD() {
                         <li><strong>Selective Attention:</strong> Some studies report improvements in the ability to filter out distractions and maintain focus on relevant stimuli.</li>
                     </ul>
 
-                    <h3 id="hyperactivity" className={styles.reportSubtitle}>3. Effects on Hyperactivity & Impulsivity</h3>
+                    <h3 id="hyperactivity" className={styles.subheading}>3. Effects on Hyperactivity & Impulsivity</h3>
                     <ul className={styles.list}>
                         <li><strong>Behavioral Control:</strong> Yoga practice, particularly those involving slow, controlled movements and holding poses, helps children practice inhibition and motor control. This translates to reduced fidgeting and restlessness.</li>
                         <li><strong>Impulsivity Reduction:</strong> Parent and teacher reports often indicate decreased impulsive behaviors, including interrupting others, acting without thinking, and difficulty waiting turns.</li>
@@ -92,7 +92,7 @@ export default function ADHD() {
                         <li><strong>Self-Regulation:</strong> The mindfulness component of yoga helps children develop awareness of their impulses and learn to pause before acting.</li>
                     </ul>
 
-                    <h3 id="executive-function" className={styles.reportSubtitle}>4. Effects on Executive Function & Emotion Regulation</h3>
+                    <h3 id="executive-function" className={styles.subheading}>4. Effects on Executive Function & Emotion Regulation</h3>
                     <p className={styles.text}>
                         Yoga requires following sequences, remembering poses, and self-monitoring, which exercises executive functions including working memory, cognitive flexibility, and inhibitory control. Key findings include:
                     </p>
@@ -103,7 +103,7 @@ export default function ADHD() {
                         <li><strong>Self-Awareness:</strong> Children develop better awareness of their body, emotions, and mental states through regular practice.</li>
                     </ul>
 
-                    <h3 id="mechanisms" className={styles.reportSubtitle}>5. Proposed Mechanisms</h3>
+                    <h3 id="mechanisms" className={styles.subheading}>5. Proposed Mechanisms</h3>
                     <ul className={styles.list}>
                         <li><strong>Autonomic Balance:</strong> Yoga increases parasympathetic activity (rest-and-digest), counteracting the chronic stress and sympathetic overdrive often associated with ADHD. This helps regulate arousal levels.</li>
                         <li><strong>Sensory Integration:</strong> The proprioceptive and vestibular input from yoga poses helps organize sensory processing, which can be dysregulated in ADHD.</li>
@@ -112,7 +112,7 @@ export default function ADHD() {
                         <li><strong>Mindfulness & Meta-cognition:</strong> The mindfulness component cultivates awareness of thoughts and impulses, enabling better self-monitoring and behavioral control.</li>
                     </ul>
 
-                    <h3 id="comparisons" className={styles.reportSubtitle}>6. Comparison with Other Interventions</h3>
+                    <h3 id="comparisons" className={styles.subheading}>6. Comparison with Other Interventions</h3>
                     <p className={styles.text}>
                         <strong>Medication:</strong> While stimulant medication (e.g., methylphenidate) remains the first-line treatment for core ADHD symptoms with larger effect sizes, yoga serves as an excellent adjunct or alternative for families preferring non-pharmacological approaches.
                     </p>
@@ -126,7 +126,7 @@ export default function ADHD() {
                         <strong>Advantages of Yoga:</strong> Unlike some medications, yoga has no negative side effects and offers additional physical health benefits like improved strength, flexibility, and body awareness. It can be particularly helpful for children who experience medication side effects or for families preferring non-pharmacological support or when sleep/anxiety problems co-exist.
                     </p>
 
-                    <h3 id="program-design" className={styles.reportSubtitle}>7. Program Design & Clinical Implications</h3>
+                    <h3 id="program-design" className={styles.subheading}>7. Program Design & Clinical Implications</h3>
                     <ul className={styles.list}>
                         <li><strong>Optimal Duration:</strong> Most effective programs involve 2-3 sessions per week for 8-12 weeks, with sessions lasting 30-60 minutes.</li>
                         <li><strong>Components:</strong> Interventions that combine postures (asanas), breath regulation (pranayama), and short mindful practices show the most promising results.</li>
@@ -136,7 +136,7 @@ export default function ADHD() {
                         <li><strong>Realistic Expectations:</strong> Clinicians should set realistic expectations—improvements are commonly modest and vary across children. Yoga should not replace evidence-based pharmacologic or behavioral therapies when these are indicated, but it can be a valuable complement.</li>
                     </ul>
 
-                    <h3 id="research-gaps" className={styles.reportSubtitle}>8. Research Gaps & Future Directions</h3>
+                    <h3 id="research-gaps" className={styles.subheading}>8. Research Gaps & Future Directions</h3>
                     <p className={styles.text}>
                         Key needs identified by the literature include:
                     </p>
@@ -149,17 +149,17 @@ export default function ADHD() {
                         <li><strong>Dose-Response:</strong> Determining optimal frequency, duration, and intensity of practice.</li>
                     </ul>
 
-                    <h3 id="safety" className={styles.reportSubtitle}>9. Safety & Adverse Events</h3>
+                    <h3 id="safety" className={styles.subheading}>9. Safety & Adverse Events</h3>
                     <p className={styles.text}>
                         Yoga is generally safe for children with ADHD. Reported adverse events are rare and typically mild (e.g., minor muscle soreness, temporary fatigue). No serious adverse events have been reported in published studies. Proper instruction and age-appropriate modifications ensure safety.
                     </p>
 
-                    <h3 id="conclusion" className={styles.reportSubtitle}>10. Conclusion</h3>
+                    <h3 id="conclusion" className={styles.subheading}>10. Conclusion</h3>
                     <p className={styles.text}>
                         PubMed research to date suggests that yoga is a promising, low-risk adjunctive intervention for children with ADHD symptoms, producing small-to-moderate improvements in attention, behavior, and related domains such as anxiety and sleep. The evidence base is growing—with randomized trials, school-based programs, and systematic reviews—but remains limited by heterogeneity and small studies. For clinicians and educators, recommending well-structured, age-appropriate yoga programs (ideally integrated with broader behavioral strategies) is reasonable while awaiting more definitive trials. Yoga empowers children with tools for self-regulation that they can use throughout their lives.
                     </p>
 
-                    <h3 id="references" className={styles.reportSubtitle}>Selected References</h3>
+                    <h3 id="references" className={styles.subheading}>Selected References</h3>
                     <ul className={styles.list} style={{ fontSize: '0.95rem' }}>
                         <li><strong>Chou CC, Huang CJ (2017):</strong> Effects of an 8-week yoga program on sustained attention and discrimination function in children with ADHD. <em>PeerJ.</em></li>
                         <li><strong>Jensen PS, Kenny DT (2004):</strong> The effects of yoga on the attention and behavior of boys with Attention-Deficit/Hyperactivity Disorder (ADHD). <em>Journal of Attention Disorders.</em></li>

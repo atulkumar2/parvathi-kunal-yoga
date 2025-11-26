@@ -93,15 +93,15 @@ export default function AnxietyDepression() {
                 </section>
 
                 {/* Extended Research Report */}
-                <section id="scientific-findings" className={styles.reportSection}>
-                    <h2 className={styles.reportTitle}>Scientific Findings: Impact of Yoga on Chronic Stress, Anxiety, and Depression</h2>
+                <section id="scientific-findings" className={styles.section}>
+                    <h2 className={styles.sectionTitle}>Scientific Findings: Impact of Yoga on Chronic Stress, Anxiety, and Depression</h2>
 
-                    <h3 id="summary" className={styles.reportSubtitle}>Summary</h3>
+                    <h3 id="summary" className={styles.subheading}>Summary</h3>
                     <p className={styles.text}>
                         Across multiple randomized trials and systematic reviews, yoga shows small-to-moderate, clinically meaningful benefits for reducing symptoms of chronic stress, anxiety, and depression. Plausible biological mechanisms include HPA-axis modulation, improved autonomic balance, reduced inflammation, and neuroplastic changes. The evidence base has grown substantially over the past decade, with multiple high-quality meta-analyses confirming consistent benefits.
                     </p>
 
-                    <h3 id="overview" className={styles.reportSubtitle}>1. Overview of PubMed Literature</h3>
+                    <h3 id="overview" className={styles.subheading}>1. Overview of PubMed Literature</h3>
                     <p className={styles.text}>
                         PubMed-indexed randomized controlled trials (RCTs), systematic reviews, and meta-analyses over the last decade examine yoga as an intervention for stress, anxiety disorders, and depressive disorders. The research landscape includes:
                     </p>
@@ -112,7 +112,7 @@ export default function AnxietyDepression() {
                         <li><strong>Recent Evidence:</strong> Reviews from 2023–2025 strengthen earlier conclusions that yoga reduces symptom severity for anxiety and depression and can lower subjective and some objective markers of stress.</li>
                     </ul>
 
-                    <h3 id="anxiety" className={styles.reportSubtitle}>2. Effects on Anxiety</h3>
+                    <h3 id="anxiety" className={styles.subheading}>2. Effects on Anxiety</h3>
 
                     <h4 className={styles.text} style={{ fontWeight: 'bold', marginTop: '1.5rem' }}>2.1 Meta-analytic Evidence</h4>
                     <ul className={styles.list}>
@@ -137,7 +137,7 @@ export default function AnxietyDepression() {
                         <li><strong>Interoceptive Awareness:</strong> Enhanced body awareness helps individuals recognize and respond to early anxiety signals.</li>
                     </ul>
 
-                    <h3 id="depression" className={styles.reportSubtitle}>3. Effects on Depression</h3>
+                    <h3 id="depression" className={styles.subheading}>3. Effects on Depression</h3>
 
                     <h4 className={styles.text} style={{ fontWeight: 'bold', marginTop: '1.5rem' }}>3.1 Magnitude of Effect</h4>
                     <ul className={styles.list}>
@@ -170,7 +170,7 @@ export default function AnxietyDepression() {
                         <li><strong>Behavioral Activation:</strong> Physical practice provides structure, social connection, and sense of accomplishment—all protective against depression.</li>
                     </ul>
 
-                    <h3 id="stress" className={styles.reportSubtitle}>4. Effects on Chronic Stress</h3>
+                    <h3 id="stress" className={styles.subheading}>4. Effects on Chronic Stress</h3>
 
                     <h4 className={styles.text} style={{ fontWeight: 'bold', marginTop: '1.5rem' }}>4.1 Subjective Stress Measures</h4>
                     <ul className={styles.list}>
@@ -195,7 +195,7 @@ export default function AnxietyDepression() {
                         <li><strong>Medical Stress:</strong> Patients with chronic illness show better stress management and quality of life.</li>
                     </ul>
 
-                    <h3 id="mechanisms" className={styles.reportSubtitle}>5. Proposed Mechanisms</h3>
+                    <h3 id="mechanisms" className={styles.subheading}>5. Proposed Mechanisms</h3>
                     <ul className={styles.list}>
                         <li><strong>HPA-Axis Regulation:</strong> Down-regulation of the hypothalamic-pituitary-adrenal axis, leading to reduced cortisol output and improved stress response.</li>
                         <li><strong>Autonomic Nervous System Changes:</strong> Improved heart-rate variability, increased parasympathetic (vagal) tone, and reduced sympathetic overdrive.</li>
@@ -206,7 +206,7 @@ export default function AnxietyDepression() {
                         <li><strong>Social Connection:</strong> Group yoga classes provide social support and reduce isolation.</li>
                     </ul>
 
-                    <h3 id="evidence-quality" className={styles.reportSubtitle}>6. Strengths and Limitations of Evidence</h3>
+                    <h3 id="evidence-quality" className={styles.subheading}>6. Strengths and Limitations of Evidence</h3>
                     <p className={styles.text}>
                         <strong>Strengths:</strong> Multiple RCTs and high-quality systematic reviews exist. Effects are reproducible across populations, settings, and yoga styles. Interventions are generally safe and well-tolerated. Biological plausibility is supported by mechanistic studies.
                     </p>
@@ -214,7 +214,7 @@ export default function AnxietyDepression() {
                         <strong>Limitations:</strong> Heterogeneity in yoga styles, intervention duration, and study populations makes direct comparisons difficult. Many trials are small and unblinded (though blinding is challenging for behavioral interventions). Active comparator trials and long-term follow-ups are fewer. Publication bias may favor positive results.
                     </p>
 
-                    <h3 id="clinical-implications" className={styles.reportSubtitle}>7. Practical and Clinical Implications</h3>
+                    <h3 id="clinical-implications" className={styles.subheading}>7. Practical and Clinical Implications</h3>
                     <ul className={styles.list}>
                         <li><strong>Adjunctive Treatment:</strong> Yoga is a viable add-on to pharmacotherapy and psychotherapy for anxiety and depression. It should not replace standard care for severe conditions but can enhance treatment outcomes.</li>
                         <li><strong>Dose-Response:</strong> Regular practice (e.g., 2–3 times/week for 8-12 weeks) appears necessary for sustained benefit. Daily home practice (even 15-20 minutes) enhances effects.</li>
@@ -224,7 +224,7 @@ export default function AnxietyDepression() {
                         <li><strong>Accessibility:</strong> Online and app-based yoga programs show promise for increasing accessibility, though in-person instruction may be preferable for beginners.</li>
                     </ul>
 
-                    <h3 id="comparisons" className={styles.reportSubtitle}>8. Comparison with Other Interventions</h3>
+                    <h3 id="comparisons" className={styles.subheading}>8. Comparison with Other Interventions</h3>
                     <p className={styles.text}>
                         <strong>Medication:</strong> Yoga can complement antidepressants/anxiolytics and may help reduce medication dependence in some patients. Not a replacement for medication in severe cases.
                     </p>
@@ -238,7 +238,7 @@ export default function AnxietyDepression() {
                         <strong>Mindfulness/Meditation:</strong> Yoga combines physical activity with mindfulness, potentially offering synergistic benefits.
                     </p>
 
-                    <h3 id="research-gaps" className={styles.reportSubtitle}>9. Research Gaps & Future Directions</h3>
+                    <h3 id="research-gaps" className={styles.subheading}>9. Research Gaps & Future Directions</h3>
                     <ul className={styles.list}>
                         <li><strong>Larger RCTs:</strong> More adequately powered, multi-site trials with standardized protocols and active comparators.</li>
                         <li><strong>Mechanism Studies:</strong> Research using biomarkers, neuroimaging, and physiological measures to understand how yoga works and identify responders.</li>
@@ -248,12 +248,12 @@ export default function AnxietyDepression() {
                         <li><strong>Implementation Science:</strong> Research on how to effectively integrate yoga into clinical care and community settings.</li>
                     </ul>
 
-                    <h3 id="conclusion" className={styles.reportSubtitle}>10. Conclusion</h3>
+                    <h3 id="conclusion" className={styles.subheading}>10. Conclusion</h3>
                     <p className={styles.text}>
                         PubMed literature strongly supports the conclusion that yoga produces small-to-moderate, clinically meaningful improvements in anxiety and depressive symptoms and can reduce subjective chronic stress. The evidence base has matured significantly, with multiple systematic reviews and meta-analyses confirming consistent benefits across diverse populations and settings. Plausible biological mechanisms include HPA-axis modulation, improved autonomic balance, reduced inflammation, and neuroplastic changes. Yoga is a safe, acceptable adjunctive intervention with clinical promise that can be confidently recommended as part of a comprehensive mental health treatment plan. While not a replacement for standard care in severe cases, yoga offers a valuable, low-risk addition that empowers patients with self-management tools and addresses the mind-body connection central to mental health.
                     </p>
 
-                    <h3 id="references" className={styles.reportSubtitle}>Selected References</h3>
+                    <h3 id="references" className={styles.subheading}>Selected References</h3>
                     <ul className={styles.list} style={{ fontSize: '0.95rem' }}>
                         <li><strong>Cramer H, et al. (2018):</strong> Yoga for anxiety: a systematic review and meta-analysis of randomized controlled trials. <em>Depression and Anxiety.</em></li>
                         <li><strong>Cramer H, et al. (2013):</strong> Yoga for depression: a systematic review and meta-analysis. <em>Depression Research and Treatment.</em></li>
