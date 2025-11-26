@@ -56,7 +56,7 @@ export default function ProgramsEvents() {
                             </div>
                             <div className={styles.detailItem}>
                                 <span className={styles.icon}>🧘</span>
-                                <span>Minimum 20 days (35 hours) per month</span>
+                                <span>Minimum 20 days (30 hours) per month</span>
                             </div>
                         </div>
 
