@@ -26,6 +26,10 @@ const ProgramsSection = () => {
 
                         <div className={styles.details}>
                             <div className={styles.detailItem}>
+                                <span className={styles.icon}>👥</span>
+                                <span>Max 15±5 people per batch</span>
+                            </div>
+                            <div className={styles.detailItem}>
                                 <span className={styles.icon}>📅</span>
                                 <span>4-5 days per week</span>
                             </div>
@@ -48,20 +52,20 @@ const ProgramsSection = () => {
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>1 Month</td>
-                                    <td className={styles.price}>₹3,500</td>
+                                    <td>1 Month (30 hours)</td>
+                                    <td className={styles.price}>₹2,500</td>
                                 </tr>
                                 <tr>
                                     <td>3 Months</td>
-                                    <td className={styles.price}>₹9,000</td>
+                                    <td className={styles.price}>₹7,000</td>
                                 </tr>
                                 <tr>
                                     <td>6 Months</td>
-                                    <td className={styles.price}>₹17,000</td>
+                                    <td className={styles.price}>₹13,000</td>
                                 </tr>
                                 <tr>
                                     <td>12 Months</td>
-                                    <td className={styles.price}>₹33,000</td>
+                                    <td className={styles.price}>₹24,000</td>
                                 </tr>
                             </tbody>
                         </table>
