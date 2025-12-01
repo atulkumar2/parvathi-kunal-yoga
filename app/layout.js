@@ -41,9 +41,9 @@ export const metadata = {
     images: ['/NirogYogaLogo.png'],
   },
   icons: {
-    icon: '/NirogYogaLogo.png',
-    shortcut: '/NirogYogaLogo.png',
-    apple: '/NirogYogaLogo.png',
+    icon: '/nirog-yoga-symbol.png',
+    shortcut: '/nirog-yoga-symbol.png',
+    apple: '/nirog-yoga-symbol.png',
   },
 };
 
