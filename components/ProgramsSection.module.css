@@ -231,3 +231,46 @@
         text-align: center;
     }
 }
+
+.personalSection {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Themes */
+.morningCard {
+    background: linear-gradient(135deg, #fffbf0 0%, #fff3e0 100%);
+    border: 1px solid #ffe0b2;
+    position: relative;
+    overflow: hidden;
+}
+
+.morningCard::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 236, 179, 0.4) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.eveningCard {
+    background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%);
+    border: 1px solid #e1bee7;
+    position: relative;
+    overflow: hidden;
+}
+
+.eveningCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(74, 20, 140, 0.05), transparent);
+    pointer-events: none;
+}

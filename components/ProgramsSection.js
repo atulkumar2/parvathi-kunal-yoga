@@ -17,10 +17,10 @@ const ProgramsSection = () => {
                 </header>
 
                 <div className={styles.grid}>
-                    {/* Group Sessions */}
-                    <div className={styles.card}>
+                    {/* Morning Group Sessions */}
+                    <div className={`${styles.card} ${styles.morningCard}`}>
                         <div className={styles.cardHeader}>
-                            <h3 className={styles.programTitle}>Group Sessions</h3>
+                            <h3 className={styles.programTitle}>Morning Group Sessions</h3>
                             <span className={styles.timing}>Morning: 5:30 AM - 7:00 AM</span>
                         </div>
 
@@ -71,8 +71,64 @@ const ProgramsSection = () => {
                         </table>
                     </div>
 
-                    {/* Personal Consultation */}
-                    <div className={styles.card}>
+                    {/* Evening Group Sessions */}
+                    <div className={`${styles.card} ${styles.eveningCard}`}>
+                        <div className={styles.cardHeader}>
+                            <h3 className={styles.programTitle}>Evening Group Sessions</h3>
+                            <span className={styles.timing}>Evening: 5:00 PM - 6:30 PM</span>
+                        </div>
+
+                        <div className={styles.details}>
+                            <div className={styles.detailItem}>
+                                <span className={styles.icon}>👥</span>
+                                <span>Max 15±5 people per batch</span>
+                            </div>
+                            <div className={styles.detailItem}>
+                                <span className={styles.icon}>📅</span>
+                                <span>3 days per week</span>
+                            </div>
+                            <div className={styles.detailItem}>
+                                <span className={styles.icon}>⏱️</span>
+                                <span>1.5 hours per day</span>
+                            </div>
+                            <div className={styles.detailItem}>
+                                <span className={styles.icon}>🧘</span>
+                                <span>Minimum 13 days (20 hours) per month</span>
+                            </div>
+                        </div>
+
+                        <table className={styles.pricingTable}>
+                            <thead>
+                                <tr>
+                                    <th>Duration</th>
+                                    <th style={{ textAlign: 'right' }}>Fee</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1 Month (20 hours)</td>
+                                    <td className={styles.price}>₹1,500</td>
+                                </tr>
+                                <tr>
+                                    <td>3 Months</td>
+                                    <td className={styles.price}>₹4,000</td>
+                                </tr>
+                                <tr>
+                                    <td>6 Months</td>
+                                    <td className={styles.price}>₹7,500</td>
+                                </tr>
+                                <tr>
+                                    <td>12 Months</td>
+                                    <td className={styles.price}>₹14,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                {/* Personal Consultation Section */}
+                <div className={styles.personalSection}>
+                    <div className={styles.card} style={{ maxWidth: '600px', margin: '0 auto', width: '100%' }}>
                         <div className={styles.cardHeader}>
                             <h3 className={styles.programTitle}>Personal Consultation</h3>
                             <span className={styles.timing}>Evening: 5:30 PM - 7:00 PM</span>
