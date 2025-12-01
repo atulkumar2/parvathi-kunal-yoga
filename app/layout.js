@@ -40,6 +40,11 @@ export const metadata = {
     description: "Holistic healing and yoga retreats in Mangalore by Prof. (Dr.) Kunal Katyayan and Parvathi Katyayan.",
     images: ['/NirogYogaLogo.png'],
   },
+  icons: {
+    icon: '/NirogYogaLogo.png',
+    shortcut: '/NirogYogaLogo.png',
+    apple: '/NirogYogaLogo.png',
+  },
 };
 
 import AnnouncementBanner from "@/components/AnnouncementBanner";
