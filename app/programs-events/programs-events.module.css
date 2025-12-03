@@ -32,7 +32,7 @@
     background: linear-gradient(135deg, #fef3c7 0%, #fde68a 25%, #fbbf24 50%, #f59e0b 75%, #d97706 100%);
     background-size: 200% 200%;
     animation: gradientShift 8s ease infinite;
-    padding: 4rem 1.5rem;
+    padding: 2rem 1.5rem;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -172,15 +172,15 @@
 
 /* Programs Section */
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 120px 20px 60px;
+    padding: 80px 20px 40px;
     scroll-margin-top: 140px;
 }
 
 .header {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .title {
@@ -198,18 +198,49 @@
     line-height: 1.6;
 }
 
+.programSummary {
+    text-align: center;
+    margin: 30px auto 40px;
+    max-width: 600px;
+}
+
+.summaryList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    text-align: left;
+}
+
+.summaryList li {
+    font-size: 1.05rem;
+    color: #555;
+    padding: 8px 0;
+}
+
+.summaryList a {
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.summaryList a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 40px;
-    margin-bottom: 60px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 40px;
 }
 
 .card {
     background: white;
-    border-radius: 20px;
-    padding: 40px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
     border: 1px solid #eee;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
@@ -223,43 +254,44 @@
 
 .cardHeader {
     text-align: center;
-    margin-bottom: 30px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
     border-bottom: 1px solid #f0f0f0;
 }
 
 .programTitle {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: var(--primary-color);
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     font-family: 'Playfair Display', serif;
 }
 
 .timing {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     color: #555;
     font-weight: 500;
     background: #f8f9fa;
-    padding: 8px 15px;
-    border-radius: 20px;
+    padding: 6px 12px;
+    border-radius: 15px;
     display: inline-block;
 }
 
 .details {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .detailItem {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     color: #666;
-    font-size: 1.05rem;
+    font-size: 0.95rem;
 }
 
 .icon {
-    margin-right: 10px;
+    margin-right: 8px;
     color: var(--primary-color);
+    font-size: 1.1rem;
 }
 
 .pricingTable {
@@ -270,7 +302,7 @@
 
 .pricingTable th,
 .pricingTable td {
-    padding: 12px 15px;
+    padding: 8px 10px;
     text-align: left;
     border-bottom: 1px solid #eee;
 }
@@ -278,14 +310,14 @@
 .pricingTable th {
     font-weight: 600;
     color: #444;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
 
 .pricingTable td {
     color: #555;
-    font-size: 1.1rem;
+    font-size: 0.95rem;
 }
 
 .price {
@@ -297,23 +329,23 @@
 /* Card Banner - Need based Discount */
 .cardBanner {
     background: linear-gradient(135deg, #fef3c7 0%, #fde68a 50%, #fbbf24 100%);
-    padding: 1rem 1.5rem;
-    margin-top: 20px;
-    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    margin-top: 15px;
+    border-radius: 8px;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
-    box-shadow: 0 4px 12px rgba(251, 191, 36, 0.15);
+    gap: 0.4rem;
+    box-shadow: 0 3px 10px rgba(251, 191, 36, 0.15);
 }
 
 .cardBannerIcon {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .cardBannerText {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     color: #7c2d12;
     font-weight: 600;
     letter-spacing: 0.3px;
@@ -516,6 +548,12 @@
     background-color: var(--primary-light);
 }
 
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
     .title {
         font-size: 2.2rem;
@@ -580,7 +618,7 @@
 }
 
 .personalSection {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     display: flex;
     justify-content: center;
 }

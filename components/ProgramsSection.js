@@ -16,166 +16,42 @@ const ProgramsSection = () => {
                     </div>
                 </header>
 
-                <div className={styles.grid}>
-                    {/* Morning Group Sessions */}
-                    <div className={`${styles.card} ${styles.morningCard}`}>
-                        <div className={styles.cardHeader}>
-                            <h3 className={styles.programTitle}>Morning Group Sessions</h3>
-                            <span className={styles.timing}>Morning: 5:30 AM - 7:00 AM</span>
-                        </div>
+                <div className={styles.compactGrid}>
+                    {/* Morning Daily Sessions */}
+                    <Link href="/programs-events#morning-daily" className={`${styles.compactCard} ${styles.morningCard}`}>
+                        <div className={styles.cardIcon}>🌅</div>
+                        <h3 className={styles.compactTitle}>Morning Group - Daily</h3>
+                        <p className={styles.compactTiming}>5:30 AM - 7:00 AM</p>
+                        <p className={styles.compactDetail}>4-5 days/week</p>
+                        <div className={styles.learnMore}>Learn More →</div>
+                    </Link>
 
-                        <div className={styles.details}>
-                            <div className={styles.detailItem}>
-                                <span className={styles.icon}>👥</span>
-                                <span>Max 15±5 people per batch</span>
-                            </div>
-                            <div className={styles.detailItem}>
-                                <span className={styles.icon}>📅</span>
-                                <span>4-5 days per week</span>
-                            </div>
-                            <div className={styles.detailItem}>
-                                <span className={styles.icon}>⏱️</span>
-                                <span>1.5 hours per day</span>
-                            </div>
-                            <div className={styles.detailItem}>
-                                <span className={styles.icon}>🧘</span>
-                                <span>Minimum 20 days (30 hours) per month</span>
-                            </div>
-                        </div>
+                    {/* Morning Alternate Days */}
+                    <Link href="/programs-events#morning-alternate" className={`${styles.compactCard} ${styles.morningCard}`}>
+                        <div className={styles.cardIcon}>🌄</div>
+                        <h3 className={styles.compactTitle}>Morning Group - Alternate Days</h3>
+                        <p className={styles.compactTiming}>5:30 AM - 7:00 AM</p>
+                        <p className={styles.compactDetail}>3 days/week</p>
+                        <div className={styles.learnMore}>Learn More →</div>
+                    </Link>
 
-                        <table className={styles.pricingTable}>
-                            <thead>
-                                <tr>
-                                    <th>Duration</th>
-                                    <th style={{ textAlign: 'right' }}>Fee</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1 Month (30 hours)</td>
-                                    <td className={styles.price}>₹2,500</td>
-                                </tr>
-                                <tr>
-                                    <td>3 Months</td>
-                                    <td className={styles.price}>₹7,000</td>
-                                </tr>
-                                <tr>
-                                    <td>6 Months</td>
-                                    <td className={styles.price}>₹13,000</td>
-                                </tr>
-                                <tr>
-                                    <td>12 Months</td>
-                                    <td className={styles.price}>₹24,000</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                    {/* Evening Sessions */}
+                    <Link href="/programs-events#evening-group" className={`${styles.compactCard} ${styles.eveningCard}`}>
+                        <div className={styles.cardIcon}>🌆</div>
+                        <h3 className={styles.compactTitle}>Evening Group - 3 Days/Week</h3>
+                        <p className={styles.compactTiming}>5:00 PM - 6:30 PM</p>
+                        <p className={styles.compactDetail}>3 days/week</p>
+                        <div className={styles.learnMore}>Learn More →</div>
+                    </Link>
 
-                    {/* Evening Group Sessions */}
-                    <div className={`${styles.card} ${styles.eveningCard}`}>
-                        <div className={styles.cardHeader}>
-                            <h3 className={styles.programTitle}>Evening Group Sessions</h3>
-                            <span className={styles.timing}>Evening: 5:00 PM - 6:30 PM</span>
-                        </div>
-
-                        <div className={styles.details}>
-                            <div className={styles.detailItem}>
-                                <span className={styles.icon}>👥</span>
-                                <span>Max 15±5 people per batch</span>
-                            </div>
-                            <div className={styles.detailItem}>
-                                <span className={styles.icon}>📅</span>
-                                <span>3 days per week</span>
-                            </div>
-                            <div className={styles.detailItem}>
-                                <span className={styles.icon}>⏱️</span>
-                                <span>1.5 hours per day</span>
-                            </div>
-                            <div className={styles.detailItem}>
-                                <span className={styles.icon}>🧘</span>
-                                <span>Minimum 13 days (20 hours) per month</span>
-                            </div>
-                        </div>
-
-                        <table className={styles.pricingTable}>
-                            <thead>
-                                <tr>
-                                    <th>Duration</th>
-                                    <th style={{ textAlign: 'right' }}>Fee</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1 Month (20 hours)</td>
-                                    <td className={styles.price}>₹1,500</td>
-                                </tr>
-                                <tr>
-                                    <td>3 Months</td>
-                                    <td className={styles.price}>₹4,000</td>
-                                </tr>
-                                <tr>
-                                    <td>6 Months</td>
-                                    <td className={styles.price}>₹7,500</td>
-                                </tr>
-                                <tr>
-                                    <td>12 Months</td>
-                                    <td className={styles.price}>₹14,000</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                {/* Personal Consultation Section */}
-                <div className={styles.personalSection}>
-                    <div className={styles.card} style={{ maxWidth: '600px', margin: '0 auto', width: '100%' }}>
-                        <div className={styles.cardHeader}>
-                            <h3 className={styles.programTitle}>Personal Consultation</h3>
-                            <span className={styles.timing}>Evening: 5:30 PM - 7:00 PM</span>
-                        </div>
-
-                        <div className={styles.details}>
-                            <div className={styles.detailItem}>
-                                <span className={styles.icon}>🤝</span>
-                                <span>One-on-one Yoga Training</span>
-                            </div>
-                            <div className={styles.detailItem}>
-                                <span className={styles.icon}>⏱️</span>
-                                <span>1.5 hours per session</span>
-                            </div>
-                            <div className={styles.detailItem}>
-                                <span className={styles.icon}>✨</span>
-                                <span>Tailored to your specific needs</span>
-                            </div>
-                        </div>
-
-                        <table className={styles.pricingTable}>
-                            <thead>
-                                <tr>
-                                    <th>Sessions</th>
-                                    <th style={{ textAlign: 'right' }}>Fee</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>5 Sessions</td>
-                                    <td className={styles.price}>₹4,000</td>
-                                </tr>
-                                <tr>
-                                    <td>10 Sessions</td>
-                                    <td className={styles.price}>₹7,000</td>
-                                </tr>
-                                <tr>
-                                    <td>15 Sessions</td>
-                                    <td className={styles.price}>₹10,000</td>
-                                </tr>
-                                <tr>
-                                    <td>20 Sessions</td>
-                                    <td className={styles.price}>₹12,000</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                    {/* Personal Consultation */}
+                    <Link href="/programs-events#personal-consultation" className={`${styles.compactCard} ${styles.personalCard}`}>
+                        <div className={styles.cardIcon}>🤝</div>
+                        <h3 className={styles.compactTitle}>Personal Consultation</h3>
+                        <p className={styles.compactTiming}>On Prior Appointment</p>
+                        <p className={styles.compactDetail}>One-on-one sessions</p>
+                        <div className={styles.learnMore}>Learn More →</div>
+                    </Link>
                 </div>
 
                 <div className={styles.ctaSection}>

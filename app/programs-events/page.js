@@ -37,12 +37,22 @@ export default function ProgramsEvents() {
                     </p>
                 </header>
 
+                {/* Program Summary List */}
+                <div className={styles.programSummary}>
+                    <ul className={styles.summaryList}>
+                        <li><a href="#morning-daily">🌅 Morning Group Session - Daily</a></li>
+                        <li><a href="#morning-alternate">🌄 Morning Group Session - Alternate Days</a></li>
+                        <li><a href="#evening-group">🌆 Evening Group Session - 3 Days/week</a></li>
+                        <li><a href="#personal-consultation">🤝 Personal Consultation - on Prior Appointment Only</a></li>
+                    </ul>
+                </div>
+
                 <div className={styles.grid}>
-                    {/* Morning Group Sessions */}
-                    <div className={`${styles.card} ${styles.morningCard}`}>
+                    {/* Morning Daily Group Sessions */}
+                    <div id="morning-daily" className={`${styles.card} ${styles.morningCard}`}>
                         <div className={styles.cardHeader}>
-                            <h2 className={styles.programTitle}>Morning Group Sessions</h2>
-                            <span className={styles.timing}>Morning: 5:30 AM - 7:00 AM</span>
+                            <h2 className={styles.programTitle}>Morning Group - Daily</h2>
+                            <span className={styles.timing}>5:30 AM - 7:00 AM</span>
                         </div>
 
                         <div className={styles.details}>
@@ -98,11 +108,71 @@ export default function ProgramsEvents() {
                         </div>
                     </div>
 
-                    {/* Evening Group Sessions */}
-                    <div className={`${styles.card} ${styles.eveningCard}`}>
+                    {/* Morning Alternate Days Group Sessions */}
+                    <div id="morning-alternate" className={`${styles.card} ${styles.morningCard}`}>
                         <div className={styles.cardHeader}>
-                            <h2 className={styles.programTitle}>Evening Group Sessions</h2>
-                            <span className={styles.timing}>Evening: 5:00 PM - 6:30 PM</span>
+                            <h2 className={styles.programTitle}>Morning Group - Alternate Days</h2>
+                            <span className={styles.timing}>5:30 AM - 7:00 AM</span>
+                        </div>
+
+                        <div className={styles.details}>
+                            <div className={styles.detailItem}>
+                                <span className={styles.icon}>👥</span>
+                                <span>Max 15±5 people per batch</span>
+                            </div>
+                            <div className={styles.detailItem}>
+                                <span className={styles.icon}>📅</span>
+                                <span>3 days per week</span>
+                            </div>
+                            <div className={styles.detailItem}>
+                                <span className={styles.icon}>⏱️</span>
+                                <span>1.5 hours per day</span>
+                            </div>
+                            <div className={styles.detailItem}>
+                                <span className={styles.icon}>🧘</span>
+                                <span>Minimum 13 days (20 hours) per month</span>
+                            </div>
+                        </div>
+
+                        <table className={styles.pricingTable}>
+                            <thead>
+                                <tr>
+                                    <th>Duration</th>
+                                    <th style={{ textAlign: 'right' }}>Fee</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1 Month (20 hours)</td>
+                                    <td className={styles.price}>₹1,500</td>
+                                </tr>
+                                <tr>
+                                    <td>3 Months</td>
+                                    <td className={styles.price}>₹4,000</td>
+                                </tr>
+                                <tr>
+                                    <td>6 Months</td>
+                                    <td className={styles.price}>₹7,500</td>
+                                </tr>
+                                <tr>
+                                    <td>12 Months</td>
+                                    <td className={styles.price}>₹14,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        {/* Need based Banner */}
+                        <div className={styles.cardBanner}>
+                            <span className={styles.cardBannerIcon}>🎁</span>
+                            <span className={styles.cardBannerText}>Need based discounts available on individual basis</span>
+                        </div>
+                    </div>
+
+                    {/* Evening Group Sessions */}
+                    <div id="evening-group" className={`${styles.card} ${styles.eveningCard}`}>
+                        <div className={styles.cardHeader}>
+                            <h2 className={styles.programTitle}>Evening Group - 3 Days/Week</h2>
+                            <span className={styles.timing}>5:00 PM - 6:30 PM</span>
                         </div>
 
                         <div className={styles.details}>
@@ -161,7 +231,7 @@ export default function ProgramsEvents() {
 
                 {/* Personal Consultation Section */}
                 <div className={styles.personalSection}>
-                    <div className={styles.card} style={{ maxWidth: '600px', margin: '0 auto', width: '100%' }}>
+                    <div id="personal-consultation" className={styles.card} style={{ maxWidth: '600px', margin: '0 auto', width: '100%' }}>
                         <div className={styles.cardHeader}>
                             <h2 className={styles.programTitle}>Personal Consultation</h2>
                             <span className={styles.timing}>Evening: 5:30 PM - 7:00 PM</span>
@@ -170,15 +240,15 @@ export default function ProgramsEvents() {
                         <div className={styles.details}>
                             <div className={styles.detailItem}>
                                 <span className={styles.icon}>🤝</span>
-                                <span>One-on-one Yoga Training</span>
+                                <span>On Prior Appointment Only</span>
+                            </div>
+                            <div className={styles.detailItem}>
+                                <span className={styles.icon}>🤝</span>
+                                <span>Personalized Yoga Consultation; Tailored to your specific needs</span>
                             </div>
                             <div className={styles.detailItem}>
                                 <span className={styles.icon}>⏱️</span>
                                 <span>1.5 hours per session</span>
-                            </div>
-                            <div className={styles.detailItem}>
-                                <span className={styles.icon}>✨</span>
-                                <span>Tailored to your specific needs</span>
                             </div>
                         </div>
 
