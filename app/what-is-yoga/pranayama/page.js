@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Image from 'next/image';
 import styles from './pranayama.module.css';
 
 export const metadata = {
@@ -130,10 +131,12 @@ export default function Pranayama() {
                     </p>
 
                     <div style={{ textAlign: 'center', margin: '2rem 0' }}>
-                        <img
+                        <Image
                             src="/pranayama-breath-cycle.png"
                             alt="Pranayama Breath Cycle Diagram"
                             style={{ maxWidth: '100%', height: 'auto', borderRadius: 'var(--radius-lg)', boxShadow: 'var(--shadow-md)' }}
+                            width={900}
+                            height={500}
                         />
                     </div>
 

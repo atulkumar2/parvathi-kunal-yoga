@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Image from 'next/image';
 import styles from './meditation.module.css';
 
 export const metadata = {
@@ -39,10 +40,12 @@ export default function Meditation() {
                     </p>
 
                     <div style={{ textAlign: 'center', margin: '2rem 0' }}>
-                        <img
+                        <Image
                             src="/meditation-guide.png"
                             alt="Meditation Guide - Postures and Techniques"
                             style={{ maxWidth: '100%', height: 'auto', borderRadius: 'var(--radius-lg)', boxShadow: 'var(--shadow-md)' }}
+                            width={800}
+                            height={450}
                         />
                     </div>
 

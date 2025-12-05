@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Image from 'next/image';
 import styles from './standing-asanas.module.css';
 
 export const metadata = {
@@ -190,10 +191,12 @@ export default function StandingAsanas() {
                     </p>
 
                     <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
-                        <img
+                        <Image
                             src="/beginner-standing-sequence.png"
                             alt="Beginner Standing Asana Sequence Infographic"
                             style={{ maxWidth: '100%', height: 'auto', borderRadius: 'var(--radius-md)', boxShadow: 'var(--shadow-lg)' }}
+                            width={900}
+                            height={500}
                         />
                     </div>
 

@@ -3,7 +3,7 @@
  * Tests all internal links across the Nirog Yoga website
  */
 
-const SITE_URL = 'http://localhost:3000';
+const { SITE_URL, assertSiteReachable } = require("./siteHealth");
 
 // All pages to test
 const PAGES_TO_TEST = [
@@ -104,6 +104,10 @@ const FOOTER_LINKS = [
 ];
 
 describe('Internal Link Checker', () => {
+    beforeAll(async () => {
+        await assertSiteReachable();
+    });
+
     describe('Page Accessibility', () => {
         PAGES_TO_TEST.forEach(page => {
             test(`${page} should be accessible`, async () => {

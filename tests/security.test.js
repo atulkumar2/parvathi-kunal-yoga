@@ -3,7 +3,7 @@
  * Tests for security best practices and vulnerabilities
  */
 
-const SITE_URL = 'http://localhost:3000';
+const { SITE_URL, assertSiteReachable } = require("./siteHealth");
 
 const PAGES_TO_TEST = [
     '/',
@@ -23,6 +23,10 @@ const PAGES_TO_TEST = [
 ];
 
 describe('Security Tests', () => {
+    beforeAll(async () => {
+        await assertSiteReachable();
+    });
+
     describe('External Links Security', () => {
         PAGES_TO_TEST.forEach(page => {
             test(`${page} - external links should have rel="noopener noreferrer"`, async () => {

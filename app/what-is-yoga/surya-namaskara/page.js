@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Image from 'next/image';
 import styles from './surya-namaskara.module.css';
 
 export const metadata = {
@@ -217,10 +218,12 @@ export default function SuryaNamaskara() {
                     </div>
 
                     <div style={{ textAlign: 'center', margin: '2rem 0' }}>
-                        <img
+                        <Image
                             src="/surya-namaskara-sequence.png"
                             alt="Surya Namaskara Complete Sequence"
                             style={{ maxWidth: '100%', height: 'auto', borderRadius: 'var(--radius-lg)', boxShadow: 'var(--shadow-md)' }}
+                            width={900}
+                            height={500}
                         />
                     </div>
 

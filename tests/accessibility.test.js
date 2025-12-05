@@ -3,7 +3,7 @@
  * Tests for WCAG compliance and accessibility best practices
  */
 
-const SITE_URL = 'http://localhost:3000';
+const { SITE_URL, assertSiteReachable } = require("./siteHealth");
 
 const PAGES_TO_TEST = [
     '/',
@@ -23,6 +23,10 @@ const PAGES_TO_TEST = [
 ];
 
 describe('Accessibility Tests', () => {
+    beforeAll(async () => {
+        await assertSiteReachable();
+    });
+
     describe('Images', () => {
         PAGES_TO_TEST.forEach(page => {
             test(`${page} - all images should have alt attributes`, async () => {

@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Image from 'next/image';
 import styles from './ptsd.module.css';
 
 export const metadata = {
@@ -18,10 +19,12 @@ export default function PTSD() {
                     <p className={styles.subtitle}>
                         Post-Traumatic Stress Disorder in the Indian Context
                     </p>
-                    <img
+                    <Image
                         src="/yoga-and-ptsd.png"
                         alt="Yoga and PTSD - Scientific Evidence"
                         className={styles.headerImage}
+                        width={900}
+                        height={500}
                     />
                 </header>
 

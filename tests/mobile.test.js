@@ -3,7 +3,7 @@
  * Tests for mobile-friendly design and viewport settings
  */
 
-const SITE_URL = 'http://localhost:3000';
+const { SITE_URL, assertSiteReachable } = require("./siteHealth");
 
 const PAGES_TO_TEST = [
     '/',
@@ -23,6 +23,10 @@ const PAGES_TO_TEST = [
 ];
 
 describe('Mobile Responsiveness Tests', () => {
+    beforeAll(async () => {
+        await assertSiteReachable();
+    });
+
     describe('Viewport Meta Tag', () => {
         PAGES_TO_TEST.forEach(page => {
             test(`${page} - should have viewport meta tag`, async () => {

@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Image from 'next/image';
 import styles from './safety-guidelines.module.css';
 
 export const metadata = {
@@ -26,10 +27,12 @@ export default function SafetyGuidelines() {
                     </p>
 
                     <div style={{ textAlign: 'center', margin: '2rem 0' }}>
-                        <img
+                        <Image
                             src="/safety-guidelines.png"
                             alt="Safety Guidelines Infographic"
                             style={{ maxWidth: '100%', height: 'auto', borderRadius: 'var(--radius-lg)', boxShadow: 'var(--shadow-md)' }}
+                            width={900}
+                            height={500}
                         />
                     </div>
 

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import styles from './payment.module.css';
@@ -52,10 +53,12 @@ export default function Payment() {
                         <div className={styles.warningBanner}>
                             <Link href="/programs-events" className={styles.warningLink}>View Programs</Link> | Have doubts? <Link href="/contact" className={styles.warningLink}>Contact us</Link> before payment.
                         </div>
-                        <img
+                        <Image
                             src="/payment-qr-code.jpg"
                             alt="Payment QR Code"
                             className={styles.qrCode}
+                            width={600}
+                            height={600}
                         />
                         <p className={styles.qrLabel}>Scan to Pay via UPI</p>
                     </div>

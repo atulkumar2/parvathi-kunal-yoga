@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from './InstructorProfile.module.css';
 
 const InstructorProfile = () => {
@@ -9,10 +10,12 @@ const InstructorProfile = () => {
                     <a href="/instructors/dr-kunal" className={styles.cardLink}>
                         <div className={styles.card}>
                             <div className={styles.imageWrapper}>
-                                <img
+                                <Image
                                     src="/dr-kunal.jpg"
                                     alt="Prof. (Dr.) Kunal"
                                     className={styles.image}
+                                    width={400}
+                                    height={400}
                                 />
                             </div>
                             <div className={styles.content}>
@@ -30,10 +33,12 @@ const InstructorProfile = () => {
                     <a href="/instructors/parvathi" className={styles.cardLink}>
                         <div className={styles.card}>
                             <div className={styles.imageWrapper}>
-                                <img
+                                <Image
                                     src="/parvathi.jpg"
                                     alt="Parvathi Katyayan"
                                     className={styles.image}
+                                    width={400}
+                                    height={400}
                                 />
                             </div>
                             <div className={styles.content}>
